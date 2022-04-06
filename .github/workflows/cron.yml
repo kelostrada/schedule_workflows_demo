@@ -2,7 +2,7 @@ name: Scheduled workflow test
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '33 * * * *'
   
   workflow_dispatch:
 
