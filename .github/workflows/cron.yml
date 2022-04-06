@@ -16,5 +16,9 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Display github event
-        run: cat $GITHUB_EVENT_PATH
+      - name: Display github event data
+        run: |
+          cat $GITHUB_EVENT_PATH
+          echo $GITHUB_SHA
+          echo $GITHUB_ACTOR
+          echo $GITHUB_REF
